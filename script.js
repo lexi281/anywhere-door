@@ -1,11 +1,11 @@
 var w = window.innerWidth;
 var h = window.innerHeight;
 
-var radius = w/2;
+var radius = w/2.2;
 var autoRotate = true;
 var rotateSpeed = -200;
-var imgWidth = 90; 
-var imgHeight = 127;
+var imgWidth = w/20; 
+var imgHeight = w/15;
 
 setTimeout(init, 100);
 
