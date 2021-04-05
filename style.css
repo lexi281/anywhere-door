@@ -1,3 +1,16 @@
+#question{
+        position:relative;
+        top: 200px;
+        right: 50px;
+	
+        font-size: 22px;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 800;
+	
+        position: fixed;
+        line-height: 140%;
+        text-align: left;
+}
 #textContainer{
     position:fixed;
     background-color:white;
@@ -10,9 +23,11 @@
         position:relative;
         margin-top: 200px;
         margin-left: 50px;
+	
         font-size: 22px;
         font-family: 'Cormorant Garamond', serif;
         font-weight: 800;
+	
         position: fixed;
         line-height: 140%;
         text-align: left;
@@ -34,16 +49,25 @@
         text-align: left;
 }
 
-#about{
-        position:fixed;
-    top:-70px;    
-    right:-200px;
+#random{
+        position:relative;
+        bottom: -100px;
+        text-decoration-color: black;
+        right: 50px;
+        font-size: 22px;
+        
+	    font-family: 'Cormorant Garamond', serif;
+        font-weight: 800;
+        position: fixed;
+        line-height: 140%;
+        text-align: right; 
 }
 
 a{
     color:white;
     text-decoration:none;
 }
+
 
 body{
     z-index: 1;
@@ -108,7 +132,7 @@ html, body {
 }
 
 #drag-container p {
-  font-size: 24px;
+  font-size: 32px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   line-height: 140%;
