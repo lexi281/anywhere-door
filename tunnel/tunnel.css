@@ -1,0 +1,76 @@
+a{
+	text-decoration: none;
+	color: black;
+
+}
+#storys{
+	position: relative;
+	
+	height:60%;
+	width:50%;
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:20%;
+    
+    font-size:1.6em; 
+    position:fixed; 
+   
+    font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+    color: black;
+    text-align: center;
+	
+    opacity: 0.3;
+    
+    text-shadow: 0px 0px 100px white;
+    
+    z-index:2
+}
+
+@keyframes float {
+  to {
+    transform: translateY(0.75em);
+  }
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  height: 100vh;
+  perspective: 20em;
+  background: white;
+}
+
+div {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.a3d {
+  top: 50%;
+  left: 50%;
+  animation: move var(--t) linear infinite;
+}
+
+@keyframes move {
+  to {
+    transform: translatez(7em);
+  }
+}
+.ring {
+  transform: rotatex(90deg) translatey(calc((1 - var(--j))*7em)) skewy(0deg);
+}
+
+.segm {
+  margin: -3.5em -50vmax;
+  width: 100vmax;
+  height: 7em;
+  transform: rotatey(var(--ca)) translatez(50vmax);
+  box-shadow: inset 30 30 80px #8AA0BA;
+  background: linear-gradient(#8AA0BA, #CDBBAA);
+}
+
+@keyframes fade {
+  to {
+    opacity: calc((var(--n) - var(--j))/var(--m));
+  }
+}
