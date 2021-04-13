@@ -11,7 +11,7 @@ setTimeout(init, 100);
 
 var obox = document.getElementById('drag-container');
 var ospin = document.getElementById('spin-container');
-var aImg = ospin.getElementsByTagName('img');
+var aImg = ospin.getElementsByTagName('a');
 var aVid = ospin.getElementsByTagName('video');
 var aEle = [...aImg, ...aVid];
 
