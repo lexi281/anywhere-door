@@ -1,43 +1,77 @@
 a{
 	text-decoration: none;
-	color: black;
+	color: white;
+	opacity:0.9;
+    text-shadow: 0px 0px 10px black;
 
 }
 #storys{
+	
+	animation: fadeIn linear 3s;
+	
 	position: relative;
+	transform: rotatex(-5deg);
 	
 	height:60%;
 	width:50%;
 	margin-left:25%;
 	margin-right:25%;
-	margin-top:20%;
+	margin-top:18%;
     
-    font-size:1.6em; 
+    font-size:1.5em; 
     position:fixed; 
    
     font-family: 'Raleway', sans-serif;
 	font-weight: 500;
-    color: black;
     text-align: center;
+	line-height: 150%;
 	
-    opacity: 0.3;
+    opacity: 0.9;
     
     text-shadow: 0px 0px 100px white;
     
     z-index:2
 }
+@keyframes fadeIn{
+  0% {opacity:0;}
+  100% {opacity:0.9;}
+}
+
 
 @keyframes float {
   to {
     transform: translateY(0.75em);
   }
 }
+
+@keyframes fadeOut{
+ 100% {opacity:0.9;}
+ 0% {opacity:0;}
+}
+
+@keyframes moveIn{
+	0% {transform: scale(1.5)}
+	100% {transform: scale(1)}
+}
+
+
 body {
+	
+  animation: fadeIn linear 3s;
+  animation: moveIn linear 3s;
+	
   overflow: hidden;
   margin: 0;
   height: 100vh;
-  perspective: 20em;
-  background: white;
+  perspective: 15em;
+  background: linear-gradient(#B6C5D7 45%, #D8CCC4 55%);
+	
+  background-image: url("img/story1.png");
+}
+
+#storys:active{
+  transition-duration:2s;
+  transform: scale(2);
 }
 
 div {
@@ -57,16 +91,18 @@ div {
   }
 }
 .ring {
-  transform: rotatex(90deg) translatey(calc((1 - var(--j))*7em)) skewy(0deg);
+  transform: rotatex(88deg) translatey(calc((1 - var(--j))*7em)) skewy(0deg);
 }
 
 .segm {
-  margin: -3.5em -50vmax;
+  margin: -10em -50vmax;
   width: 100vmax;
   height: 7em;
-  transform: rotatey(var(--ca)) translatez(50vmax);
-  box-shadow: inset 30 30 80px #8AA0BA;
-  background: linear-gradient(#8AA0BA, #CDBBAA);
+  transform: rotatey(var(--ca)) translatez(40vmax);
+/*  box-shadow: inset 3 3 3px black; */
+/*  background: linear-gradient(#8AA0BA, grey, #8AA0BA, grey, #8AA0BA,grey,#8AA0BA,grey);*/
+/*  background: linear-gradient(#8AA0BA, #CDBBAA,#8AA0BA,#CDBBAA);*/
+  background: linear-gradient(white 0%, black 2%, black 49%, white 50%, black 51%,black 100%);
 }
 
 @keyframes fade {
